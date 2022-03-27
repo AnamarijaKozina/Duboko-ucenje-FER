@@ -38,4 +38,4 @@ for i in range(100):
     # Postavljanje gradijenata na nulu
     optimizer.zero_grad()
     if(i%20==0):
-      print(f'step: {i}, loss:{loss:.8f}, Y_:{Y_.tolist()}, a:{a.item():.8f}, b: {b.item():.8f}\n')
+      print(f'step: {i}, loss:{loss:.18f}, Y_:{Y_.detach()}, a:{a.item():.8f}, b: {b.item():.8f}\n')
