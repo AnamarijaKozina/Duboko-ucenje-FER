@@ -1,1 +1,2 @@
 - fix loss in all(?) files before mnist, should be sum(...some multiplication..., axis=1)
+- in batchnorm: some datapoints that seem incorrectly classified on the graph are round?
